@@ -1,4 +1,5 @@
 from math import atan
+import rospy
 
 class YawController(object):
     def __init__(self, wheel_base, steer_ratio, min_speed, max_lat_accel, max_steer_angle):
