@@ -17,4 +17,4 @@ class Controller(object):
         # Return throttle, brake, steer
         steer = self.yaw_controller.get_steering(linear_velocity, angular_velocity, current_velocity)
         rospy.loginfo('steering angle: {}'.format(steer))
-        return 0.5, 0.0, steer*5.0
+        return 0.7, 0.0, steer
